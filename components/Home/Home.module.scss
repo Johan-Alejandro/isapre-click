@@ -1,0 +1,77 @@
+.homePage {
+  margin-top: 80px;
+  padding: 1rem;
+  @media only screen and (min-width: 600px){
+  padding: 2rem 4rem;
+  }
+}
+
+.homePage h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  @media  only screen and (min-width:600px){
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.homePage h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  @media only screen and (min-width:600px){
+    font-size: 1.5rem;
+    line-height: 41.04px; 
+  }
+}
+
+.homePage p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  @media only screen and (min-width:600px){
+    line-height: 27.36px; 
+  }
+}
+
+.linkBenefits{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttonContainer{
+  max-width: 40%;
+  margin-top: 1rem;
+}
+
+// .submitButton{
+//   background-color: black;
+//   color: white;
+//   border-radius: 100px;
+//   margin-top: 2rem;
+//   width: 100%;
+//   text-transform: none;
+//   font-family: 'Lexend', sans-serif ;
+//   font-weight: 400;
+//   @media  only screen and (min-width:600px){
+//     width: 378px;
+//   }
+// }
+
+
+.doubts{
+  color:#8E8E8E ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.doubts a{
+  cursor: pointer;
+  text-decoration: underline;
+}
