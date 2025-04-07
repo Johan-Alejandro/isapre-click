@@ -3,6 +3,7 @@ import { Container, TextField } from '@mui/material'
 import { Button } from '../Buttons/Button';
 import { useRouter } from 'next/router';
 import styles from '../Home/Home.module.scss';
+import BannerPanel from "../Banner/Banner";
 
 const Home = () => {
   const [code, setCode] = useState('');
@@ -27,9 +28,8 @@ const Home = () => {
   };
 
   return (
-    <section className={styles.homePage}>
-      <Container>
-      </Container>
+    <section>
+        <BannerPanel/>
     </section>
   );
 };
