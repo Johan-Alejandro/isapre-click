@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import styles from '../Home/Home.module.scss';
 import BannerPanel from "../Banner/Banner";
 import BrandSlider from "../BrandSlider/BrandSlider";
+import AboutUs from "../AboutUs/AboutUs";
 
 const Home = () => {
   const [code, setCode] = useState('');
@@ -32,6 +33,7 @@ const Home = () => {
     <section>
         <BannerPanel/>
         <BrandSlider/>
+        <AboutUs/>
     </section>
   );
 };

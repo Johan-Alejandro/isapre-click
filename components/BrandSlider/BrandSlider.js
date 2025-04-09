@@ -7,7 +7,7 @@ import SliderTour from '../Sliders/SliderTour';
 const BrandSlider = () => {
   return (
     <section id='nuestros-aliados' className={styles.cont}>
-      <h1 className={styles.title}>Nuestros Aliados </h1>
+      <h2 className={styles.title}>Nuestros Aliados </h2>
       <SliderTour/>
     </section>
   );
