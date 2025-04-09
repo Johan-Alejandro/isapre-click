@@ -4,6 +4,7 @@ import { Button } from '../Buttons/Button';
 import { useRouter } from 'next/router';
 import styles from '../Home/Home.module.scss';
 import BannerPanel from "../Banner/Banner";
+import BrandSlider from "../BrandSlider/BrandSlider";
 
 const Home = () => {
   const [code, setCode] = useState('');
@@ -30,6 +31,7 @@ const Home = () => {
   return (
     <section>
         <BannerPanel/>
+        <BrandSlider/>
     </section>
   );
 };

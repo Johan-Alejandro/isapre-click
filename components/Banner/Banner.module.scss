@@ -31,7 +31,6 @@
       top: 0;
       right: 0;
       bottom: 0;
-      background: rgba(32, 33, 35, 0.5);
       transition: all 0.5s ease-in-out;
       z-index: 10;
     }
@@ -67,14 +66,14 @@
 
   @media only screen and (max-width: 600px) {
     .title {
+      text-align: center;
       font-size: 1.5rem;
       font-weight: bold;
-      // color: $white;
+      color: white;
       z-index: 100;
     }
     .description {
       text-align: center;
-      color: black;
       line-height: 18.1px;
       z-index: 100;
       padding: 0;

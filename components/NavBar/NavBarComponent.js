@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import styles from './NavBarComponent.module.scss'; // Importamos el archivo SCSS
 
-const pages = ['Nosotros', 'Nuestros Planes', 'Cotizar', 'Contacto'];
+const pages = ['Nuestros Aliados', 'Nuestros Planes', 'Cotizar', 'Contacto'];
 
 const theme = createTheme({
   components: {
@@ -59,7 +59,7 @@ const NavbarComponent = () => {
             {/* Logo */}
             <img
               className={styles.logo}
-              src="/IsapreClick.png"
+              src="/isapre_logo.png"
               alt="Logo Better"
               onClick={() => window.scrollTo(0, 0)}
             />
@@ -90,6 +90,12 @@ const NavbarComponent = () => {
                 }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
+                sx={{
+                  '& .MuiMenu-list': {
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  },
+                }}
               >
                 {pages.map((page) => (
                   <MenuItem
@@ -98,7 +104,7 @@ const NavbarComponent = () => {
                     href={`#${page.toLowerCase().replace(/\s+/g, '-')}`}
                     onClick={handleCloseNavMenu}
                     className={styles.menuItem}
-                    sx={{ backgroundColor: '#24b9cc' }} 
+                    sx={{ backgroundColor: '#24b9cc', paddingBottom: '0' }} 
                   >
                     <Typography textAlign="center" sx={{ color: 'white' }}>{page}</Typography>
                   </MenuItem>

@@ -1,0 +1,15 @@
+.swiperContainer {
+    margin: 0 2rem;
+    @media (max-width: 600px) {
+      margin: 0;
+  }
+}
+.swiperContainer :global(.swiper-wrapper) {
+    display: flex;
+    align-items: center;
+  }
+
+.slideImage {
+    width: 100%;
+    height: auto;
+  }

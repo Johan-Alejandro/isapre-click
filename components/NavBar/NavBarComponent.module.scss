@@ -3,6 +3,7 @@
   // display: flex;
   // justify-content: flex-end;
   justify-content: center;
+  // background-color: #eceff0 !important;
   @media only screen and (min-width: 900px) {
     min-height: 92px !important;
   }
@@ -12,6 +13,10 @@
   width: 263px;
   height: 130px;
   cursor: pointer;
+  @media only screen and (max-width: 600px) {
+    width: 200px;
+    height: 100px;
+  }
 }
 
 .menuItem {
