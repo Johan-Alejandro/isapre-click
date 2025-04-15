@@ -1,5 +1,7 @@
-import '../styles/global.scss';  // Importa tus estilos globales
+import '../styles/global.scss';  // Estilos globales
+import 'react-toastify/dist/ReactToastify.css'; // Estilos de react-toastify
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ToastContainer } from 'react-toastify';
 
 let theme = createTheme({
   colors: {
@@ -15,7 +17,21 @@ let theme = createTheme({
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <>
+        <Component {...pageProps} />
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
+      </>
     </ThemeProvider>
   );
 }

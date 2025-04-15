@@ -6,6 +6,7 @@ import styles from '../Home/Home.module.scss';
 import BannerPanel from "../Banner/Banner";
 import BrandSlider from "../BrandSlider/BrandSlider";
 import AboutUs from "../AboutUs/AboutUs";
+import FormPrincipal from "../Form/FormPrincipal";
 
 const Home = () => {
   const [code, setCode] = useState('');
@@ -33,6 +34,7 @@ const Home = () => {
     <section>
         <BannerPanel/>
         <BrandSlider/>
+        <FormPrincipal/>
         <AboutUs/>
     </section>
   );

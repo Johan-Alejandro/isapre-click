@@ -1,0 +1,73 @@
+.modalBox {
+  padding: 2rem;
+}
+
+.title {
+  text-align:center;
+  font-size: 2rem;
+  font-weight:600;
+  text-transform:capitalize;
+  font-family: "Montserrat", sans-serif;
+  color: #24b9cc;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+      font-size: 48px;
+  }
+}
+
+.btnHero {
+  border-radius: 100px;
+  background-color: black;
+  font-family: 'Helvetica Neue';
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0 1.5rem;
+  text-transform: capitalize;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken(black, 10%);
+  }
+}
+
+.borderImage {
+  position: relative;
+  width: 99px;
+  height: 99px;
+  box-shadow: 0px 0px 5px 0px rgba(168, 168, 168, 1);
+
+  @media only screen and (max-width: 600px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.buttonUpload {
+  display: none;
+}
+
+.customFileUpload {
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #2e2e2e;
+  background-color: #2e2e2e;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+  padding: 6px 12px;
+}
+
+
+.MuiInputLabel-root.Mui-focused {
+  color: #24b9cc;
+}

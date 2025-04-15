@@ -1,7 +1,11 @@
 .ContBenefits {
-  padding: 1rem;
+  padding: 0 2rem 1rem;
 }
-
+.AboutUsCont {
+  background-color: #24b9cc ;
+  border-radius: 10px;
+  max-width: 100% !important;
+}
 .title {
   text-align:center;
   font-size: 2rem;
@@ -9,38 +13,48 @@
   text-transform:capitalize;
   font-family: "Montserrat", sans-serif;
   color: #24b9cc;
-  margin-top: 0;
-  margin-bottom: 0;
-  @media (min-width: 768px) {
-        font-size: 48px;
 }
+
+@media (min-width: 768px) {
+  .title {
+      font-size: 48px;
+  }
 }
 
 .benefitsGeneralCont {
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 600px) {
+  flex-direction: column-reverse !important;
+    }
 }
 
 .textContainer {
   padding: 2rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+    text-align: center;
+      }
 }
 
 .description {
   font-size: 1.2rem;
-  padding-left: 4rem;
+  color: white;
+  @media only screen and (max-width: 600px) {
+    padding: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+      }
 }
 
-.imageCont {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.imageContainer{
+  padding: 2rem;
+  align-content: center;
 }
-
 .image {
-  width: 500px;  // Esto asegura que la imagen ocupe el 100% de su contenedor
-  height: 400px;
-  object-fit: contain;
+  width: 100%;  // Esto asegura que la imagen ocupe el 100% de su contenedor
+  border-radius: 10px;
 }
