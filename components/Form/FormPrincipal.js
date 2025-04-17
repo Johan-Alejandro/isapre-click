@@ -69,6 +69,16 @@ const FormPrincipal = () => {
             {...register('full_name')}
             error={!!errors.full_name}
             helperText={errors.full_name?.message}
+            sx={{
+              '& label.Mui-focused': {
+                color: '#24b9cc', // Color del label al enfocar
+              },
+              '& .MuiOutlinedInput-root': {
+                '&.Mui-focused fieldset': {
+                  borderColor: '#24b9cc', // Borde al enfocar
+                },
+              },
+            }}
           />
         </Grid>
 
@@ -80,6 +90,16 @@ const FormPrincipal = () => {
             {...register('age')}
             error={!!errors.age}
             helperText={errors.age?.message}
+            sx={{
+              '& label.Mui-focused': {
+                color: '#24b9cc', // Color del label al enfocar
+              },
+              '& .MuiOutlinedInput-root': {
+                '&.Mui-focused fieldset': {
+                  borderColor: '#24b9cc', // Borde al enfocar
+                },
+              },
+            }}
           />
         </Grid>
 
@@ -91,6 +111,16 @@ const FormPrincipal = () => {
             {...register('rut')}
             error={!!errors.rut}
             helperText={errors.rut?.message}
+            sx={{
+              '& label.Mui-focused': {
+                color: '#24b9cc', // Color del label al enfocar
+              },
+              '& .MuiOutlinedInput-root': {
+                '&.Mui-focused fieldset': {
+                  borderColor: '#24b9cc', // Borde al enfocar
+                },
+              },
+            }}
           />
         </Grid>
 
@@ -102,6 +132,16 @@ const FormPrincipal = () => {
             {...register('email')}
             error={!!errors.email}
             helperText={errors.email?.message}
+            sx={{
+              '& label.Mui-focused': {
+                color: '#24b9cc', // Color del label al enfocar
+              },
+              '& .MuiOutlinedInput-root': {
+                '&.Mui-focused fieldset': {
+                  borderColor: '#24b9cc', // Borde al enfocar
+                },
+              },
+            }}
           />
         </Grid>
 
@@ -113,6 +153,16 @@ const FormPrincipal = () => {
             {...register('phone')}
             error={!!errors.phone}
             helperText={errors.phone?.message}
+            sx={{
+              '& label.Mui-focused': {
+                color: '#24b9cc', // Color del label al enfocar
+              },
+              '& .MuiOutlinedInput-root': {
+                '&.Mui-focused fieldset': {
+                  borderColor: '#24b9cc', // Borde al enfocar
+                },
+              },
+            }}
           />
         </Grid>
 
@@ -124,6 +174,16 @@ const FormPrincipal = () => {
             {...register('renta')}
             error={!!errors.renta}
             helperText={errors.renta?.message}
+            sx={{
+              '& label.Mui-focused': {
+                color: '#24b9cc', // Color del label al enfocar
+              },
+              '& .MuiOutlinedInput-root': {
+                '&.Mui-focused fieldset': {
+                  borderColor: '#24b9cc', // Borde al enfocar
+                },
+              },
+            }}
           />
         </Grid>
 
@@ -135,18 +195,38 @@ const FormPrincipal = () => {
             {...register('comuna')}
             error={!!errors.comuna}
             helperText={errors.comuna?.message}
+            sx={{
+              '& label.Mui-focused': {
+                color: '#24b9cc', // Color del label al enfocar
+              },
+              '& .MuiOutlinedInput-root': {
+                '&.Mui-focused fieldset': {
+                  borderColor: '#24b9cc', // Borde al enfocar
+                },
+              },
+            }}
           />
         </Grid>
 
         <Grid item xs={12} sm={6}>
-          <TextField
-            fullWidth
-            label="Previsión de Salud Actual"
-            placeholder="Ej: Fonasa, Isapre Colmena..."
-            {...register('prevision')}
-            error={!!errors.prevision}
-            helperText={errors.prevision?.message}
-          />
+        <TextField
+          fullWidth
+          label="Previsión de Salud Actual"
+          placeholder="Ej: Fonasa, Isapre Colmena..."
+          {...register('prevision')}
+          error={!!errors.prevision}
+          helperText={errors.prevision?.message}
+          sx={{
+            '& label.Mui-focused': {
+              color: '#24b9cc', // Color del label al enfocar
+            },
+            '& .MuiOutlinedInput-root': {
+              '&.Mui-focused fieldset': {
+                borderColor: '#24b9cc', // Borde al enfocar
+              },
+            },
+          }}
+        />
         </Grid>
       </Grid>
 

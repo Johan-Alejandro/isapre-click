@@ -7,6 +7,7 @@ import BannerPanel from "../Banner/Banner";
 import BrandSlider from "../BrandSlider/BrandSlider";
 import AboutUs from "../AboutUs/AboutUs";
 import FormPrincipal from "../Form/FormPrincipal";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   const [code, setCode] = useState('');
@@ -36,6 +37,7 @@ const Home = () => {
         <BrandSlider/>
         <FormPrincipal/>
         <AboutUs/>
+        <Footer/>
     </section>
   );
 };
