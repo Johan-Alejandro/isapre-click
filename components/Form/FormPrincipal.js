@@ -40,12 +40,26 @@ const FormPrincipal = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     try {
-      console.log('Datos enviados:', data);
+      const response = await fetch('https://isapreclick.cl/api-register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Error al enviar los datos');
+      }
+  
+      const result = await response.json();
+      console.log('Respuesta del servidor:', result);
       toast.success('Datos enviados correctamente');
       reset();
     } catch (e) {
+      console.error(e);
       toast.error('Error al enviar los datos');
     }
   };
