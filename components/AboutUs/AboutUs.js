@@ -5,7 +5,7 @@ import styles from './AboutUs.module.scss';
 
 const AboutUs = () => {
   return (
-    <section className={styles.ContBenefits}>
+    <section id = 'sobre-nosotros' className={styles.ContBenefits}>
         <h2 className={styles.title}>Sobre Nosotros</h2>
      <Container className={styles.AboutUsCont} >
         <Grid container className={styles.benefitsGeneralCont}>

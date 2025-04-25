@@ -58,7 +58,7 @@ const FormPrincipal = () => {
       onSubmit={handleSubmit(onSubmit)}
       className={styles.modalBox}
     >
-      <h3 className={styles.title}>Formulario de Contacto</h3>
+      <h3 id='cotizar' className={styles.title}>Formulario de Contacto</h3>
 
       <Grid container spacing={2}>
         <Grid item xs={12}>

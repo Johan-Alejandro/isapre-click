@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import styles from './NavBarComponent.module.scss'; // Importamos el archivo SCSS
 
-const pages = ['Nuestros Aliados', 'Nuestros Planes', 'Cotizar', 'Contacto'];
+const pages = ['Nuestros Aliados',  'Cotizar', 'Sobre Nosotros', 'Enlaces'];
 
 const theme = createTheme({
   components: {

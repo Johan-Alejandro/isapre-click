@@ -10,7 +10,7 @@ const pages = [
 
 const Footer = () => {
     return (
-    <footer>
+    <footer id='enlaces'>
         <div className={styles.FooterCont}>
             <div className={styles.BetterLogo}>
                 <img className={styles.logo} src="/isapre_logo.png" alt="Logo Isapre" />

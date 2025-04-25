@@ -19,9 +19,11 @@ const BannerPanel = ( ) => {
             Encuentra el plan ideal para ti y tu familia... </p>
             <p className={styles.description}> Compara, elige y ahorra.
             ¡Cotiza tu plan hoy mismo! </p>
+            <Link href="#cotizar" passHref legacyBehavior>
             <Button className={styles.btnClas}>
-            COTIZAR PLAN
-           </Button>
+              COTIZAR PLAN
+            </Button>
+          </Link>
           </div>
         </section>
     </React.Fragment>
