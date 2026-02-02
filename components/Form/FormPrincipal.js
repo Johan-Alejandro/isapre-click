@@ -69,7 +69,7 @@ const FormPrincipal = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch("https://isapreclick.cl/api-register", {
+      const response = await fetch("https://isapre-backend-64505245681.southamerica-east1.run.app/clients", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

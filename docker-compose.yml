@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: isapre-frontend
+    ports:
+      - "3001:8080"
+    environment:
+      # 🔗 URL de tu Backend (usa localhost si corre local o la URL de GCP si ya está arriba)
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:3000}
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: always
+
+# Nota: No necesitamos volúmenes de base de datos aquí ya que el Frontend es Stateless.

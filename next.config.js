@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
-
 const path = require("path");
 
-// const API_URL = process.env.API_URL;
-// const SITE_URL = process.env.SITE_URL;
-
 const nextConfig = {
+  /**
+   * 🚀 OPTIMIZACIÓN PARA DOCKER / CLOUD RUN
+   * Esta línea es la más importante. Crea una versión mínima de la app 
+   * en .next/standalone que incluye solo los archivos necesarios para 
+   * ejecutarse en el servidor, reduciendo el tamaño de la imagen de ~1GB a ~150MB.
+   */
+  output: 'standalone',
+
   publicRuntimeConfig: {
     env: {
       channel_id: process.env.CHANNEL_ID,
@@ -15,31 +19,25 @@ const nextConfig = {
       location: process.env.LOCATION,
     },
   },
+  
   trailingSlash: false,
   reactStrictMode: true,
   swcMinify: true,
+
   images: {
     domains: [
-      "ultimatefitness.cl",
-      "mundo-salud-store-3.mybigcommerce.com",
-      "mundo-salud-store-2.mybigcommerce.com",
-      "ultimatefitnessco.cdn.prismic.io",
-      "ultimatefitness.cdn.prismic.io",
-      "ultimatefitness.cdn.prismic.io/ultimatefitness",
-      "picsum.photos",
-      "bigcommerce.com",
-      "cdn11.bigcommerce.com",
-      "images.prismic.io",
       "mega.nz",
       "i.picsum.photos",
-      "grupo-vita.mybigcommerce.com",
       "scontent.cdninstagram.com",
       "www.instagram.com",
       "res.cloudinary.com",
+      "lh3.googleusercontent.com", // Agregado para compatibilidad con perfiles de Google
     ],
     formats: ["image/webp"],
     dangerouslyAllowSVG: true,
   },
+
+  // Si decides habilitar SASS en el futuro en el contenedor:
   // sassOptions: {
   //   includePaths: [path.join(__dirname, "styles")],
   //   prependData: `@import "settings.module.scss";`,
